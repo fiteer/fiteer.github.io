@@ -523,7 +523,7 @@ p{
 #projects .project-item .info{
     position: absolute;
     width: 100%;
-    left: -100%;
+    left: 0%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -544,6 +544,10 @@ p{
     margin-bottom: 20px;
     
 }
+
+#projects .project-item .info .icons a img{
+    width: 60%;
+}
 #projects .project-item .info .icons img{
     height: 63%;
     margin: 15px;
@@ -559,7 +563,7 @@ p{
     padding: 15px 21px;
 }
 
-#projects .project-item:hover .info{
+#projects .project-item .info{
     animation: info 1s ease-in-out forwards;
     
 }
