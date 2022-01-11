@@ -463,12 +463,14 @@ p{
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
+    position: relative;
 }
 
 #projects .project-info{
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -517,6 +519,59 @@ p{
 #projects .project-item:hover .project-img img{
     transform: scale(1.1);
 }
+
+#projects .project-item .info{
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    color: white;
+    z-index: 1000;
+}
+
+#projects .project-item .info .icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+#projects .project-item .info .icons img{
+    height: 63%;
+    margin: 15px;
+    width: 8%;
+    cursor: pointer;
+}
+#projects .project-item .info .icons span{
+    font-size: 46px;
+}
+
+#projects .project-item .info .cat{
+    font-size: 1.5rem;
+    padding: 15px 21px;
+}
+
+#projects .project-item:hover .info{
+    animation: info 1s ease-in-out forwards;
+    
+}
+@keyframes info{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
 
 /* End Projects Section */
 
@@ -581,10 +636,10 @@ p{
 #contact form textarea{
     height: 60px;
 }
-.contact-item img{
-    padding: 24px;
+.contact-item iframe{
+    /* padding: 24px;
     border-radius: 15%;
-    border: 1px solid #CCC;
+    border: 1px solid #CCC; */
 }
 /* End Contact Section */
 
@@ -742,6 +797,7 @@ p{
         height: 100%;
         width: 50%;
     }
+    
     /* End Project */
     
     /* Start Contact */
