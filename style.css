@@ -523,7 +523,7 @@ p{
 #projects .project-item .info{
     position: absolute;
     width: 100%;
-    left: 0%;
+    left: -100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -563,7 +563,7 @@ p{
     padding: 15px 21px;
 }
 
-#projects .project-item .info{
+#projects .project-item:hover .info{
     animation: info 1s ease-in-out forwards;
     
 }
