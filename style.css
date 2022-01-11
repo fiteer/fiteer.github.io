@@ -621,7 +621,7 @@ p{
 .contact-item .form-control{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -630,16 +630,27 @@ p{
     margin-bottom: 10px;
 }
 
-#contact form input{
+#contact form :where(input, textarea){
     padding: 10px;
+    border: 1px solid #CCC;
+    outline: none;
 }
 #contact form textarea{
     height: 60px;
 }
-.contact-item iframe{
-    /* padding: 24px;
+#contact form :where(input:focus, textarea:focus){
+    border-color: crimson;
+    box-shadow: 0 0 3px 1px rgba(220, 20, 60, 0.541);
+    transition: all .5s ease-in-out;
+}
+#contact form .cat{
+    margin-top: 0;
+    padding: 5px 5px;
+    width: 32%;
+}
+.contact-item img{
+    padding: 24px;
     border-radius: 15%;
-    border: 1px solid #CCC; */
 }
 /* End Contact Section */
 
@@ -817,6 +828,9 @@ p{
         flex-direction: row;
         justify-content: space-between;
         height: 400px;
+    }
+    .contact-item img{
+        width: 50%;
     }
     /* End Contact */
 }
