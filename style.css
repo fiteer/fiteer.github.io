@@ -221,9 +221,8 @@ p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-align: left;
-    flex-direction: column;
 }
 
 
@@ -270,18 +269,6 @@ p{
 #hero a{
     font-size: 2.5rem;
     letter-spacing: .2rem;
-}
-#hero img{
-    width: 80%;
-    border-radius: 50%;
-    height: 200px;
-    animation: img 5s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-#hero img:hover{
-    border: 10px solid crimson;
-    transition: all 1s ease-in-out;
 }
 
 @keyframes img{
@@ -690,18 +677,8 @@ p{
     h1.section-title{
         font-size: 6rem;
     }
-    /* Start Hero */
-    #hero .hero{
-        flex-direction: row;
-
-    }
     #hero h1{
         font-size: 6rem;
-    }
-    #hero img{
-        width: 26%;
-        border-radius: 50%;
-        height: 262px;
     }
     /* End Hero */
     /* Start About */
