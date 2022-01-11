@@ -274,7 +274,7 @@ p{
 #hero img{
     width: 70%;
     border-radius: 50%;
-    height: 262px;
+    height: 200px;
     animation: img 5s ease-in-out;
     transition: all 1s ease-in-out;
 }
